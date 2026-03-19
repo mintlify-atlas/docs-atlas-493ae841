@@ -1,0 +1,126 @@
+{
+  "projectType": "saas",
+  "projectName": "Code Canvas Complete",
+  "projectDescription": "A browser-based coding workspace with an integrated AI assistant, multi-file editing, workflow automation, and optional bring-your-own-key (BYOK) model routing, backed by Supabase.",
+  "theme": "palm",
+  "primaryColor": "#4595db",
+  "lightColor": "#5ebf9e",
+  "darkColor": "#0494dc",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "local-development"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/code-editor",
+              "features/ai-assistant",
+              "features/workflows",
+              "features/terminal",
+              "features/git-integration",
+              "features/themes",
+              "features/collaboration"
+            ]
+          },
+          {
+            "group": "AI & Models",
+            "pages": [
+              "ai/byok-providers",
+              "ai/tool-actions",
+              "ai/chat-widgets",
+              "ai/mcp-skills"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/overview",
+              "deployment/vercel",
+              "deployment/koyeb",
+              "deployment/replit",
+              "deployment/lovable",
+              "deployment/subdomains"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/environment-variables",
+              "configuration/supabase",
+              "configuration/shell-executor",
+              "configuration/webcontainers"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Edge Functions",
+            "pages": [
+              "api/ai-chat",
+              "api/execute-code",
+              "api/generate-image",
+              "api/generate-music",
+              "api/generate-3d",
+              "api/compile-arduino",
+              "api/validate-api-key",
+              "api/github-proxy"
+            ]
+          },
+          {
+            "group": "AI Tool Actions",
+            "pages": [
+              "api/tool-actions/code-actions",
+              "api/tool-actions/project-actions",
+              "api/tool-actions/media-actions",
+              "api/tool-actions/git-actions"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Browser-based IDE with multi-file editing and file tree",
+    "Integrated AI assistant with 30+ tool/function actions",
+    "BYOK (bring-your-own-key) support for OpenAI, Anthropic, Gemini, Perplexity, DeepSeek, xAI, Cohere, and OpenRouter",
+    "Browser-native shell via WebContainers (Node.js runtime)",
+    "Workflow automation — create, save, and run reusable workflows",
+    "Git integration (commit, branch, import from GitHub/GitLab)",
+    "Media generation: images, music/audio, and 3D models",
+    "Arduino firmware compilation and WebSerial upload",
+    "Scratch block programming environment",
+    "Collaborative editing and project sharing with subdomain publishing",
+    "Theme system with custom theme creator and library",
+    "Supabase Auth + Edge Functions backend"
+  ],
+  "publicApiSurface": [
+    "POST /functions/v1/ai-chat",
+    "POST /functions/v1/execute-code",
+    "POST /functions/v1/generate-image",
+    "POST /functions/v1/generate-music",
+    "POST /functions/v1/generate-3d",
+    "POST /functions/v1/compile-arduino",
+    "POST /functions/v1/validate-api-key",
+    "POST /functions/v1/github-proxy",
+    "POST /functions/v1/ai-explain-symbol",
+    "POST /functions/v1/ai-generate-tests",
+    "POST /functions/v1/fetch-ai-skills",
+    "POST /functions/v1/generate-command",
+    "POST /functions/v1/manage-env-secrets",
+    "POST /functions/v1/template-assistant",
+    "POST /functions/v1/send-collab-notification",
+    "POST /functions/v1/session-recorder-sync"
+  ]
+}
